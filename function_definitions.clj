@@ -7,3 +7,6 @@
 (#(+ % 5) 3)
 
 (partial + 5) 3)
+
+; variable amount of args - sum example
+(defn sum [& args] (apply + args))
